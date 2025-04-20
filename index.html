@@ -1,49 +1,17 @@
 <!DOCTYPE html>
 <html lang="hi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Web Stories - Maurya Times</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0; padding: 20px;
-      background: #f9f9f9;
-    }
-    h1 { text-align: center; }
-    .story-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .story-card {
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      text-decoration: none;
-      color: #000;
-      overflow: hidden;
-      transition: 0.3s ease;
-    }
-    .story-card:hover {
-      transform: translateY(-5px);
-    }
-    .story-card img {
-      width: 100%;
-      height: 360px;
-      object-fit: cover;
-    }
-    .story-title {
-      padding: 10px;
-      font-size: 1.1rem;
-      font-weight: bold;
-    }
-  </style>
+  <link href="https://www.mauryatimes.com/favicon.ico" rel="icon" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/style.css">
+
 </head>
+
 <body>
-  <h1>📚 Maurya Times Web Stories</h1>
+  <h1 class="header"><img src="./assets//brand/maurya_times_web_logo_hi.png" alt="" class="logo-img"> Web Stories</h1>
   <div class="story-grid" id="storyGrid">Loading stories...</div>
 
   <script>
@@ -69,4 +37,5 @@
       });
   </script>
 </body>
+
 </html>
