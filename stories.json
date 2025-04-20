@@ -1,10 +1,12 @@
 [
   {
+    "favicon": "./assets/brand/favicon.ico",
     "title": "सफलता के 5 आसान मंत्र",
     "file": "success-story.html",
     "thumb": "assets/images/success-thumb.png"
   },
   {
+    "favicon": "./assets/brand/favicon.ico",
     "title": "आज की ट्रेंडिंग खबरें - 20 अप्रैल 2025",
     "file": "trending-20-april-2025.html",
     "thumb": "assets/images/elon-musk.png"
