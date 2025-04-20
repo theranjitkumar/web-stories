@@ -1,12 +1,12 @@
 [
   {
-  "title": "सफलता के 5 आसान मंत्र",
-  "file": "success-story.html",
-  "thumb": "images/success-thumb.jpg"
+    "title": "सफलता के 5 आसान मंत्र",
+    "file": "success-story.html",
+    "thumb": "assets/images/success-thumb.jpg"
   },
   {
-  "title": "मोटिवेशनल कहानी",
-  "file": "motivation-story.html",
-  "thumb": "images/motivation-thumb.jpg"
+    "title": "आज की ट्रेंडिंग खबरें - 20 अप्रैल 2025",
+    "file": "trending-20-april-2025.html",
+    "thumb": "assets/images/elon-musk.png"
   }
 ]
