@@ -44,17 +44,29 @@
 </head>
 <body>
   <h1>📚 Maurya Times Web Stories</h1>
+  <div class="story-grid" id="storyGrid">Loading stories...</div>
 
-  <div class="story-grid">
-    <a class="story-card" href="success-story.html">
-      <img src="images/success-thumb.jpg" alt="Success Story">
-      <div class="story-title">सफलता के 5 आसान मंत्र</div>
-    </a>
-    <a class="story-card" href="motivation-story.html">
-      <img src="images/motivation-thumb.jpg" alt="Motivation">
-      <div class="story-title">मोटिवेशनल कहानी</div>
-    </a>
-    <!-- More stories can be added like this -->
-  </div>
+  <script>
+    fetch('stories.json')
+      .then(res => res.json())
+      .then(stories => {
+        const container = document.getElementById('storyGrid');
+        container.innerHTML = '';
+        stories.forEach(story => {
+          const card = document.createElement('a');
+          card.href = story.file;
+          card.className = 'story-card';
+          card.innerHTML = `
+            <img src="${story.thumb}" alt="${story.title}">
+            <div class="story-title">${story.title}</div>
+          `;
+          container.appendChild(card);
+        });
+      })
+      .catch(err => {
+        document.getElementById('storyGrid').innerHTML = 'Error loading stories.';
+        console.error(err);
+      });
+  </script>
 </body>
 </html>
