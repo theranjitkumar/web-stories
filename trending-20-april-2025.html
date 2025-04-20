@@ -8,9 +8,27 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>
         body {
-            visibility: hidden
+            visibility: hidden;
+            animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        }
+
+        @keyframes -amp-start {
+            from {
+                visibility: hidden;
+            }
+
+            to {
+                visibility: visible;
+            }
         }
     </style>
+    <noscript>
+        <style amp-boilerplate>
+            body {
+                visibility: visible;
+            }
+        </style>
+    </noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
     <style amp-custom>
@@ -21,7 +39,6 @@
 
         h1 {
             font-size: 2em;
-            margin: 0.5em 0;
         }
 
         p {
@@ -38,7 +55,8 @@
         <!-- एलन मस्क की भारत यात्रा की योजना -->
         <amp-story-page id="page1">
             <amp-story-grid-layer template="fill">
-                <amp-img src="./assets/images/elon-musk.png" width="720" height="1280" layout="responsive"></amp-img>
+                <amp-img src="./assets/images/elon-musk.png" width="720" height="1280" layout="responsive"
+                    alt="एलन मस्क"></amp-img>
             </amp-story-grid-layer>
             <amp-story-grid-layer template="thirds" style="color: white;">
                 <h1 grid-area="upper-third">एलन मस्क की भारत यात्रा</h1>
@@ -51,8 +69,8 @@
         <!-- भारत और अमेरिका के बीच व्यापार समझौता वार्ता -->
         <amp-story-page id="page2">
             <amp-story-grid-layer template="fill">
-                <amp-img src="./assets/images/india-us-trade.png" width="720" height="1280"
-                    layout="responsive"></amp-img>
+                <amp-img src="./assets/images/india-us-trade.png" width="720" height="1280" layout="responsive"
+                    alt="भारत-अमेरिका व्यापार"></amp-img>
             </amp-story-grid-layer>
             <amp-story-grid-layer template="thirds" style="color: white;">
                 <h1 grid-area="upper-third">भारत-अमेरिका व्यापार वार्ता</h1>
@@ -61,18 +79,19 @@
                     उद्देश्य 2030 तक व्यापार को $500 बिलियन तक पहुंचाना है।</p>
             </amp-story-grid-layer>
         </amp-story-page>
-
+        <!-- Removed misplaced amp-img tag -->
         <!-- भारत में औसत से अधिक मानसून की भविष्यवाणी -->
         <amp-story-page id="page3">
             <amp-story-grid-layer template="fill">
-                <amp-img src="./assets/images/monsoon-forecast.png" width="720" height="1280"
-                    layout="responsive"></amp-img>
-            </amp-story-grid-layer>
-            <amp-story-grid-layer template="vertical">
-                <h1>औसत से अधिक मानसून</h1>
-                <p>भारत सरकार ने 2025 में औसत से अधिक मानसून की भविष्यवाणी की है, जो कृषि उत्पादन और अर्थव्यवस्था के लिए
-                    सकारात्मक संकेत है।</p>
-            </amp-story-grid-layer>
+                <amp-img src="./assets/images/monsoon-forecast.png" width="720" height="1280" <amp-img
+                    src="./assets/images/monsoon-forecast.png" width="720" height="1280" layout="responsive"
+                    alt="मानसून की भविष्यवाणी"></amp-img>
+                <amp-story-grid-layer template="vertical">
+                    <h1>औसत से अधिक मानसून</h1>
+                    <p>भारत सरकार ने 2025 में औसत से अधिक मानसून की भविष्यवाणी की है, जो कृषि उत्पादन और अर्थव्यवस्था के
+                        लिए
+                        सकारात्मक संकेत है।</p>
+                </amp-story-grid-layer>
         </amp-story-page>
 
         <!-- समाप्ति पृष्ठ -->
