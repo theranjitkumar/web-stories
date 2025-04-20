@@ -10,5 +10,11 @@
     "title": "आज की ट्रेंडिंग खबरें - 20 अप्रैल 2025",
     "file": "trending-20-april-2025.html",
     "thumb": "assets/images/elon-musk.png"
+  },
+  {
+    "favicon": "./assets/brand/favicon.ico",
+    "title": "Bangladesh vs Zimbabwe - Cricket Showdown",
+    "file": "bd-vs-zim.html",
+    "thumb": "./assets/images/bd-vs-zim-1.png"
   }
 ]
