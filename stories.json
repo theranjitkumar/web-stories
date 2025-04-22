@@ -16,5 +16,11 @@
     "title": "Bangladesh vs Zimbabwe - Cricket Showdown",
     "file": "bd-vs-zim.html",
     "thumb": "./assets/images/bd-vs-zim-1.png"
+  },
+  {
+    "favicon": "./assets/brand/favicon.ico",
+    "title": "Ground Zero Movie Review",
+    "file": "ground-zero-review.html",
+    "thumb": "./assets/images/ground-zero/gz0.jpg"
   }
 ]
